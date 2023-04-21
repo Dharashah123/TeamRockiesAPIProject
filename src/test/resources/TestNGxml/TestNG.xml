@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Suite" verbose="1">
+    <test name="api tests">
+        <classes>
+            <class name="com.envision.tests.FirstRestAssuredTest">
+                <methods>
+                    <include name="testGetListUsersAPI"/>
+                    <include name="testUserCreationPostAPI"/>
+                    <include name="testUpdateUserPutAPI"/>
+                    <include name="testCreatePetPostAPI"/>
+                    <include name="testDeletePetDetailsByIdAPI"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+ </suite>

@@ -1,0 +1,64 @@
+{
+ "getListUser": [
+   {
+     "baseUri": "https://reqres.in/",
+     "endPoint": "/api/users?page=2",
+     "payload": "/src/test/resources/requestBody/user.json",
+     "statusCode": "200",
+     "method": "GET"
+   }
+   ],
+
+  "createUser": [
+    {
+      "baseUri": "https://reqres.in/",
+      "endPoint": "/api/users?page=2",
+      "payload": "/src/test/resources/requestBody/user.json",
+      "statusCode": "201",
+      "method": "POST",
+      "name": "morpheus",
+      "job": "Leader"
+    }
+  ],
+  "updateUser": [
+    {
+      "baseUri": "https://reqres.in/",
+      "endPoint": "/api/users/2",
+      "payload": "/src/test/resources/requestBody/user.json",
+      "statusCode": "200",
+      "method": "PUT",
+      "name": "morpheus",
+      "job": "zion resident"
+    }
+  ],
+  "createPetDetailsData": [
+    {
+      "contentType": "application/json",
+      "baseUri": "https://petstore.swagger.io/",
+      "endPoint": "/v2/pet",
+      "payload": "/src/test/resources/requestBody/createPet.json",
+      "statusCode": "200",
+      "method": "POST",
+      "id": "3456",
+      "category": "dog",
+      "name": "doggie",
+      "photoUrls":"test",
+      "status": "available"
+    }
+  ],
+  "deletePetById": [
+    {
+      "contentType": "application/json",
+      "baseUri": "https://petstore.swagger.io/",
+      "endPoint": "/v2/pet",
+      "payload": "/src/test/resources/requestBody/deleteUSerByPetId.json",
+      "statusCode": "405",
+      "method": "DELETE",
+      "id": "2"
+    }
+  ]
+}
+
+
+
+
